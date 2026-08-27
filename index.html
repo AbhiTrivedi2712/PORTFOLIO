@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhinav Trivedi — Software Developer &amp; CS Student</title>
+    <meta name="description" content="Portfolio of Abhinav Trivedi, a Software Developer specializing in AI, cybersecurity and scalable applications.">
+    <meta name="theme-color" content="#020209">
+
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Google Fonts — Inter + Plus Jakarta Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- ======================= PAGE LOADER ======================= -->
+    <div id="page-loader" aria-hidden="true">
+        <div class="loader-logo">AT</div>
+        <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+    </div>
+
+    <!-- ======================= SCROLL PROGRESS ======================= -->
+    <div id="scroll-progress" aria-hidden="true"></div>
+
+
+
+    <!-- ======================= FIXED SOCIAL SIDEBAR ======================= -->
+    <div class="social-sidebar" aria-label="Social links">
+        <a href="https://github.com/AbhiTrivedi2712" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/abhinav-trivedi-0635b71b9" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+
+    <!-- ======================= NAVBAR ======================= -->
+    <nav class="navbar" id="navbar" aria-label="Main navigation">
+        <a href="#home" class="nav-logo" id="navLogo">AT</a>
+        <a href="mailto:abhinavtrivedi2712@gmail.com" class="nav-email" aria-label="Email Abhinav">abhinavtrivedi2712@gmail.com</a>
+        <ul class="nav-links" role="list">
+            <li><a href="#about"  class="nav-link">ABOUT</a></li>
+            <li><a href="#projects" class="nav-link">WORK</a></li>
+            <li><a href="#contact" class="nav-link">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- ======================= HERO ======================= -->
+        <section id="home" class="hero" aria-label="Introduction">
+            <div class="hero-left">
+                <span class="hero-greeting">Hello! I'm</span>
+                <h1 class="hero-name" data-text="ABHINAV TRIVEDI">ABHINAV<br>TRIVEDI</h1>
+            </div>
+
+            <div class="hero-center">
+                <div class="hero-avatar-wrap">
+                    <img src="assets/hero-image.png" alt="Abhinav Trivedi — Software Developer" class="hero-avatar" loading="eager">
+                </div>
+            </div>
+
+            <div class="hero-right">
+                <p class="hero-passion">A Passionate</p>
+                <div class="hero-roles">
+                    <span class="hero-role-text" id="heroRole">SOFTWARE DEV</span>
+                </div>
+                <div class="hero-cta-row">
+                    <a href="#projects" class="hero-link" id="heroViewWork">View Work →</a>
+                    <a href="port/Abhinav_Trivedi_Resume_Cap.pdf" target="_blank" rel="noopener noreferrer" class="hero-link muted" id="heroResume">Resume ↗</a>
+                </div>
+            </div>
+
+            <div class="hero-scroll-indicator" aria-hidden="true">
+                <div class="scroll-line"></div>
+                <span>SCROLL</span>
+            </div>
+        </section>
+
+        <!-- ======================= ABOUT ======================= -->
+        <section id="about" class="about section-pad" aria-label="About Abhinav">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-left reveal">
+                        <div class="section-label">ABOUT</div>
+                        <h2 class="section-heading">ABOUT <span class="accent">ME</span></h2>
+                        <p class="about-bio">Computer Science undergraduate with a strong passion for cybersecurity, secure application development, and machine learning. I build real-world AI-powered systems — from phishing detectors to multi-agent financial platforms. Exploring the edges of ethical hacking, threat intelligence, and intelligent automation.</p>
+                        <a href="port/Abhinav_Trivedi_Resume_Cap.pdf" target="_blank" rel="noopener noreferrer" class="underline-link" id="aboutResume">Download Resume ↗</a>
+                    </div>
+                    <div class="about-right reveal">
+                        <div class="details-list" role="list">
+                            <div class="detail-row" role="listitem">
+                                <span class="detail-label">NAME</span>
+                                <span class="detail-val">Abhinav Trivedi</span>
+                            </div>
+                            <div class="detail-row" role="listitem">
+                                <span class="detail-label">EMAIL</span>
+                                <span class="detail-val">abhinavtrivedi2712@gmail.com</span>
+                            </div>
+                            <div class="detail-row" role="listitem">
+                                <span class="detail-label">PHONE</span>
+                                <span class="detail-val">+91 7999065417</span>
+                            </div>
+                            <div class="detail-row" role="listitem">
+                                <span class="detail-label">LOCATION</span>
+                                <span class="detail-val">Bhopal, India</span>
+                            </div>
+                            <div class="detail-row" role="listitem">
+                                <span class="detail-label">DEGREE</span>
+                                <span class="detail-val">B.Tech Computer Science</span>
+                            </div>
+                        </div>
+                        <div class="stats-row reveal-stagger">
+                            <div class="stat-box">
+                                <span class="stat-num counter" data-target="3">0</span>
+                                <span class="stat-lbl">Featured<br>Projects</span>
+                            </div>
+                            <div class="stat-box">
+                                <span class="stat-num counter" data-target="12">0</span>
+                                <span class="stat-lbl">Certs<br>Earned</span>
+                            </div>
+                            <div class="stat-box">
+                                <span class="stat-num">CS</span>
+                                <span class="stat-lbl">Computer<br>Science</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================= ACHIEVEMENTS ======================= -->
+        <section id="achievements" class="achievements section-pad" aria-label="Achievements">
+            <div class="container">
+                <div class="section-label">ACHIEVEMENTS</div>
+                <h2 class="section-heading reveal">MY <span class="accent">ACHIEVEMENTS</span></h2>
+
+                <!-- Achievement 1 — Capgemini -->
+                <div class="achievement-card reveal" id="ach-capgemini">
+                    <div class="ach-left">
+                        <span class="ach-tag">July 2026 &bull; Top 100 Teams</span>
+                        <h3 class="ach-title">Capgemini AgentifAI<br>Buildathon 2026</h3>
+                        <p class="ach-desc">Secured a position among the Top 100 Teams globally in the Capgemini AgentifAI Buildathon. Built a multi-agent AI solution under Team LogicLegend, competing against thousands of participants nationwide.</p>
+                        <a href="port/Capgemini Exceller AgentifAI Buildathon Certificate.pdf" target="_blank" rel="noopener noreferrer" class="underline-link" id="achCapgeminiCert">View Certificate ↗</a>
+                    </div>
+                    <div class="ach-right">
+                        <img src="assets/capgemini_buildathon.png" alt="Capgemini AgentifAI Buildathon Certificate — Abhinav Trivedi, Top 100" class="ach-img" loading="lazy">
+                    </div>
+                </div>
+
+                <!-- Achievement 2 — Cisco Virtual Internship -->
+                <div class="achievement-card reveal" id="ach-cisco" style="margin-top: 1.5rem;">
+                    <div class="ach-left">
+                        <span class="ach-tag">2025 &bull; Virtual Internship</span>
+                        <h3 class="ach-title">Cisco AICTE Virtual<br>Internship Program</h3>
+                        <p class="ach-desc">Completed the Cisco AICTE Virtual Internship program in Cybersecurity (June–August 2025), gaining hands-on experience in networking fundamentals, cybersecurity practices, and enterprise-level network configuration. Covered CCNA-level topics through real-world simulations.</p>
+                        <a href="port/Abhinav Trivedi.pdf" target="_blank" rel="noopener noreferrer" class="underline-link" id="achCiscoCert">View Certificate ↗</a>
+                    </div>
+                    <div class="ach-right">
+                        <img src="assets/cisco_virtual_internship.png" alt="Cisco AICTE Virtual Internship Certificate — Abhinav Trivedi, Cybersecurity" class="ach-img" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================= PROJECTS — Luxury Showcase ======================= -->
+        <section id="projects" class="projects section-pad" aria-label="Projects">
+            <div class="container-fluid">
+                <div class="projects-top-bar">
+                    <div>
+                        <div class="section-label">SELECTED WORK</div>
+                        <h2 class="section-heading no-mb reveal">MY <span class="accent">WORK</span></h2>
+                    </div>
+                    <a href="https://github.com/AbhiTrivedi2712" target="_blank" rel="noopener noreferrer" class="view-all-link" id="viewAllGithub">View All on GitHub ↗</a>
+                </div>
+
+                <div class="projects-3col reveal-stagger">
+
+                    <!-- Project 01 -->
+                    <div class="proj-col" id="proj-01">
+                        <div class="proj-header">
+                            <span class="proj-num">01</span>
+                            <div class="proj-title-block">
+                                <h3 class="proj-name">Quantum Financial<br>Intelligence Agent</h3>
+                                <p class="proj-tagline">AI-Powered Stock Analysis Platform</p>
+                            </div>
+                        </div>
+                        <div class="proj-tech-block">
+                            <span class="proj-tech-label">Tools &amp; Features</span>
+                            <div class="proj-pills">
+                                <span class="proj-pill">Python</span>
+                                <span class="proj-pill">Multi-Agent AI</span>
+                                <span class="proj-pill">Gemini API</span>
+                                <span class="proj-pill">Financial Data APIs</span>
+                                <span class="proj-pill">Research Reports</span>
+                            </div>
+                        </div>
+
+                        <div class="proj-footer">
+                            <div class="proj-status">
+                                <div class="proj-status-dot"></div>
+                                ACTIVE
+                            </div>
+                            <a href="https://github.com/AbhiTrivedi2712" target="_blank" rel="noopener noreferrer" class="proj-action" id="proj01Action">GitHub ↗</a>
+                        </div>
+                    </div>
+
+                    <!-- Project 02 -->
+                    <div class="proj-col" id="proj-02">
+                        <div class="proj-header">
+                            <span class="proj-num">02</span>
+                            <div class="proj-title-block">
+                                <h3 class="proj-name">AI Phishing<br>Email Detector</h3>
+                                <p class="proj-tagline">Real-Time Cybersecurity Threat API</p>
+                            </div>
+                        </div>
+                        <div class="proj-tech-block">
+                            <span class="proj-tech-label">Tools &amp; Features</span>
+                            <div class="proj-pills">
+                                <span class="proj-pill">Python</span>
+                                <span class="proj-pill">FastAPI</span>
+                                <span class="proj-pill">Machine Learning</span>
+                                <span class="proj-pill">NLP</span>
+                                <span class="proj-pill">REST API</span>
+                                <span class="proj-pill">Email Classification</span>
+                            </div>
+                        </div>
+
+                        <div class="proj-footer">
+                            <div class="proj-status">
+                                <div class="proj-status-dot"></div>
+                                ACTIVE
+                            </div>
+                            <a href="https://github.com/AbhiTrivedi2712" target="_blank" rel="noopener noreferrer" class="proj-action" id="proj02Action">GitHub ↗</a>
+                        </div>
+                    </div>
+
+                    <!-- Project 03 -->
+                    <div class="proj-col" id="proj-03">
+                        <div class="proj-header">
+                            <span class="proj-num">03</span>
+                            <div class="proj-title-block">
+                                <h3 class="proj-name">Smart Payment<br>Splitter</h3>
+                                <p class="proj-tagline">Group Expense Management App</p>
+                            </div>
+                        </div>
+                        <div class="proj-tech-block">
+                            <span class="proj-tech-label">Tools &amp; Features</span>
+                            <div class="proj-pills">
+                                <span class="proj-pill">Java</span>
+                                <span class="proj-pill">HTML/CSS</span>
+                                <span class="proj-pill">JavaScript</span>
+                                <span class="proj-pill">MySQL</span>
+                                <span class="proj-pill">Servlets</span>
+                                <span class="proj-pill">Auto Balance Tracking</span>
+                            </div>
+                        </div>
+
+                        <div class="proj-footer">
+                            <div class="proj-status">
+                                <div class="proj-status-dot"></div>
+                                ACTIVE
+                            </div>
+                            <a href="https://github.com/AbhiTrivedi2712" target="_blank" rel="noopener noreferrer" class="proj-action" id="proj03Action">GitHub ↗</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================= TECHSTACK — Glass Sphere Laboratory ======================= -->
+        <section id="skills" class="skills section-pad" aria-label="Technical Skills">
+            <div class="container-fluid">
+                <div class="section-label" style="display:block; text-align:center; margin-bottom:1rem;">TECHSTACK</div>
+                <h2 class="section-heading centered reveal">MY <span class="accent">TECHSTACK</span></h2>
+                <div class="bubbles-arena" id="bubblesArena" role="img" aria-label="Interactive technology skill bubbles">
+                    <!-- Injected by script.js -->
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================= CERTIFICATIONS — Luxury Gallery ======================= -->
+        <section id="certifications" class="certifications section-pad" aria-label="Certifications">
+            <div class="container-fluid">
+                <div class="section-label">CREDENTIALS</div>
+                <h2 class="section-heading reveal">ALL <span class="accent">CERTIFICATIONS</span></h2>
+                <div class="cert-scroll-track" id="certScrollTrack" role="list" aria-label="Certification gallery — drag or scroll horizontally">
+                    <div class="cert-scroll-inner">
+
+                        <!-- 1. Capgemini AgentifAI Buildathon -->
+                        <div class="cert-item cert-item-highlight" role="listitem" id="cert-capgemini">
+                            <img src="assets/capgemini_buildathon.png" alt="Capgemini AgentifAI Buildathon — Top 100 Certificate" class="cert-item-img" loading="lazy">
+                            <div class="cert-item-info">
+                                <h4>AgentifAI Buildathon</h4>
+                                <p>Top 100 &bull; Capgemini</p>
+                                <a href="port/Capgemini Exceller AgentifAI Buildathon Certificate.pdf" target="_blank" rel="noopener noreferrer" class="cert-cred-link" id="certCapgemini">VIEW CREDENTIAL ↗</a>
+                            </div>
+                        </div>
+
+                        <!-- 2. Cisco AICTE Virtual Internship -->
+                        <div class="cert-item cert-item-highlight" role="listitem" id="cert-cisco-intern">
+                            <img src="assets/cisco_virtual_internship.png" alt="Cisco AICTE Virtual Internship — Cybersecurity Certificate" class="cert-item-img" loading="lazy">
+                            <div class="cert-item-info">
+                                <h4>Cisco AICTE Virtual Internship</h4>
+                                <p>Cybersecurity &bull; Cisco</p>
+                                <a href="port/Abhinav Trivedi.pdf" target="_blank" rel="noopener noreferrer" class="cert-cred-link" id="certCiscoIntern">VIEW CREDENTIAL ↗</a>
+                            </div>
+                        </div>
+
+                        <!-- 3. Apply AI: Analyze Customer Reviews -->
+                        <div class="cert-item" role="listitem" id="cert-apply-ai">
+                            <img src="assets/cert_apply_ai.png" alt="Apply AI: Analyze Customer Reviews — Cisco Certificate" class="cert-item-img" loading="lazy">
+                            <div class="cert-item-info">
+                                <h4>Apply AI: Analyze Customer Reviews</h4>
+                                <p>Cisco</p>
+                                <a href="port/Apply_AI-_Analyze_Customer_Reviews_certificate_abhinavtrivedi2712-gmail-com_6c12dc81-977b-4777-a558-eb20bd19dde9.pdf" target="_blank" rel="noopener noreferrer" class="cert-cred-link" id="certApplyAi">VIEW CREDENTIAL ↗</a>
+                            </div>
+                        </div>
+
+                        <!-- 4. CCNA: Enterprise Networking, Security & Automation -->
+                        <div class="cert-item" role="listitem" id="cert-ccna-enterprise">
+                            <img src="assets/cert_ccna_enterprise.png" alt="CCNA: Enterprise Networking, Security and Automation — Cisco Certificate" class="cert-item-img" loading="lazy">
+                            <div class="cert-item-info">
+                                <h4>Enterprise Networking, Security &amp; Automation</h4>
+                                <p>CCNA &bull; Cisco</p>
+                                <a href="port/CCNA-_Enterprise_Networking-_Security-_and_Automation_certificate_abhinavtrivedi2712-gmail-com_d7b40282-bfbc-4c39-96ef-9d7a3cc3a005.pdf" target="_blank" rel="noopener noreferrer" class="cert-cred-link" id="certCcnaEnterprise">VIEW CREDENTIAL ↗</a>
+                            </div>
+                        </div>
+
+                        <!-- 5. CCNA: Introduction to Networks -->
+                        <div class="cert-item" role="listitem" id="cert-ccna-intro">
+                            <img src="assets/cert_ccna_intro.png" alt="CCNA: Introduction to Networks — Cisco Certificate" class="cert-item-img" loading="lazy">
+                            <div class="cert-item-info">
+                                <h4>Introduction to Networks</h4>
+                                <p>CCNA &bull; Cisco</p>
+                                <a href="port/CCNA-_Introduction_to_Networks_certificate_abhinavtrivedi2712-gmail-com_7be36466-916c-4fdb-96ad-79432f08edaf.pdf" target="_blank" rel="noopener noreferrer" class="cert-cred-link" id="certCcnaIntro">VIEW CREDENTIAL ↗</a>
+                            </div>
+                        </div>
+
+                        <!-- 6. CCNA: Switching, Routing & Wireless Essentials -->
+                        <div class="cert-item" role="listitem" id="cert-ccna-switching">
+                            <img src="assets/cert_ccna_switching.png" alt="CCNA: Switching, Routing and Wireless Essentials — Cisco Certificate" class="cert-item-img" loading="lazy">
+                            <div class="cert-item-info">
+                                <h4>Switching, Routing &amp; Wireless Essentials</h4>
+                                <p>CCNA &bull; Cisco</p>
+                                <a href="port/CCNA-_Switching-_Routing-_and_Wireless_Essentials_certificate_abhinavtrivedi2712-gmail-com_5c1bfa4b-9802-466f-be35-43f26acb385c.pdf" target="_blank" rel="noopener noreferrer" class="cert-cred-link" id="certCcnaSwitching">VIEW CREDENTIAL ↗</a>
+                            </div>
+                        </div>
+
+                        <!-- 7. Exploring Networking with Cisco Packet Tracer -->
+                        <div class="cert-item" role="listitem" id="cert-exploring-pt">
+                            <img src="assets/cert_exploring_packet_tracer.png" alt="Exploring Networking with Cisco Packet Tracer — Certificate" class="cert-item-img" loading="lazy">
+                            <div class="cert-item-info">
+                                <h4>Exploring Networking with Packet Tracer</h4>
+                                <p>Cisco</p>
+                                <a href="port/Exploring_Networking_with_Cisco_Packet_Tracer_certificate_abhinavtrivedi2712-gmail-com_79ec5c96-bd03-4064-9681-45c899618424.pdf" target="_blank" rel="noopener noreferrer" class="cert-cred-link" id="certExploringPt">VIEW CREDENTIAL ↗</a>
+                            </div>
+                        </div>
+
+                        <!-- 8. Getting Started with Cisco Packet Tracer -->
+                        <div class="cert-item" role="listitem" id="cert-getting-started-pt">
+                            <img src="assets/cert_getting_started_packet_tracer.png" alt="Getting Started with Cisco Packet Tracer — Certificate" class="cert-item-img" loading="lazy">
+                            <div class="cert-item-info">
+                                <h4>Getting Started with Packet Tracer</h4>
+                                <p>Cisco</p>
+                                <a href="port/Getting_Started_with_Cisco_Packet_Tracer_certificate_abhinavtrivedi2712-gmail-com_32f2b8ed-b3f4-4443-bc80-01f508cf9ffb.pdf" target="_blank" rel="noopener noreferrer" class="cert-cred-link" id="certGettingStartedPt">VIEW CREDENTIAL ↗</a>
+                            </div>
+                        </div>
+
+                        <!-- 9. Introduction to Data Science -->
+                        <div class="cert-item" role="listitem" id="cert-data-science">
+                            <img src="assets/cert_intro_data_science.png" alt="Introduction to Data Science — Cisco Certificate" class="cert-item-img" loading="lazy">
+                            <div class="cert-item-info">
+                                <h4>Introduction to Data Science</h4>
+                                <p>Cisco</p>
+                                <a href="port/Introduction_to_Data_Science_certificate_abhinavtrivedi2712-gmail-com_a7d2d095-de68-4d41-a374-937ac6c88adc.pdf" target="_blank" rel="noopener noreferrer" class="cert-cred-link" id="certDataScience">VIEW CREDENTIAL ↗</a>
+                            </div>
+                        </div>
+
+                        <!-- 10. Introduction to Modern AI -->
+                        <div class="cert-item" role="listitem" id="cert-modern-ai">
+                            <img src="assets/cert_intro_modern_ai.png" alt="Introduction to Modern AI — Cisco Certificate" class="cert-item-img" loading="lazy">
+                            <div class="cert-item-info">
+                                <h4>Introduction to Modern AI</h4>
+                                <p>Cisco</p>
+                                <a href="port/Introduction_to_Modern_AI_certificate_abhinavtrivedi2712-gmail-com_a7f05a53-3623-4fbb-833d-facb15a34483.pdf" target="_blank" rel="noopener noreferrer" class="cert-cred-link" id="certModernAi">VIEW CREDENTIAL ↗</a>
+                            </div>
+                        </div>
+
+                        <!-- 11. Junior Cybersecurity Analyst Career Path -->
+                        <div class="cert-item" role="listitem" id="cert-cybersecurity">
+                            <img src="assets/cert_cybersecurity_essentials.png" alt="Junior Cybersecurity Analyst Career Path — Cisco Certificate" class="cert-item-img" loading="lazy">
+                            <div class="cert-item-info">
+                                <h4>Junior Cybersecurity Analyst Career Path</h4>
+                                <p>Cisco</p>
+                                <a href="port/Junior_Cybersecurity_Analyst_Career_Path_certificate_abhinavtrivedi2712-gmail-com_0faeb0e9-91ad-481c-bae0-08b6f456893c.pdf" target="_blank" rel="noopener noreferrer" class="cert-cred-link" id="certCybersecurity">VIEW CREDENTIAL ↗</a>
+                            </div>
+                        </div>
+
+                        <!-- 12. Network Technician Career Path -->
+                        <div class="cert-item" role="listitem" id="cert-network-tech">
+                            <img src="assets/cert_networking_essentials.png" alt="Network Technician Career Path — Cisco Certificate" class="cert-item-img" loading="lazy">
+                            <div class="cert-item-info">
+                                <h4>Network Technician Career Path</h4>
+                                <p>Cisco</p>
+                                <a href="port/Network_Technician_Career_Path_certificate_abhinavtrivedi2712-gmail-com_b6448b7f-bb36-4292-ba09-8a543b4716b0.pdf" target="_blank" rel="noopener noreferrer" class="cert-cred-link" id="certNetworkTech">VIEW CREDENTIAL ↗</a>
+                            </div>
+                        </div>
+
+                        <!-- 13. Python Essentials 1 -->
+                        <div class="cert-item" role="listitem" id="cert-python-1">
+                            <img src="assets/cert_python_essentials_1.png" alt="Python Essentials 1 — Cisco Certificate" class="cert-item-img" loading="lazy">
+                            <div class="cert-item-info">
+                                <h4>Python Essentials 1</h4>
+                                <p>Cisco</p>
+                                <a href="port/Python_Essentials_1_certificate_abhinavtrivedi2712-gmail-com_83cc0543-d04d-4adb-8f41-6003ede23f18.pdf" target="_blank" rel="noopener noreferrer" class="cert-cred-link" id="certPython1">VIEW CREDENTIAL ↗</a>
+                            </div>
+                        </div>
+
+                        <!-- 14. Python Essentials 2 -->
+                        <div class="cert-item" role="listitem" id="cert-python-2">
+                            <img src="assets/cert_python_essentials_2.png" alt="Python Essentials 2 — Cisco Certificate" class="cert-item-img" loading="lazy">
+                            <div class="cert-item-info">
+                                <h4>Python Essentials 2</h4>
+                                <p>Cisco</p>
+                                <a href="port/Python_Essentials_2_certificate_abhinavtrivedi2712-gmail-com_ab163808-f92d-4efb-94f2-8a47618d6fff.pdf" target="_blank" rel="noopener noreferrer" class="cert-cred-link" id="certPython2">VIEW CREDENTIAL ↗</a>
+                            </div>
+                        </div>
+
+                        <!-- 15. Google Cloud — Develop GenAI Apps with Gemini and Streamlit -->
+                        <div class="cert-item cert-item-highlight" role="listitem" id="cert-genai-streamlit">
+                            <img src="assets/project1.jpeg" alt="Develop GenAI Apps with Gemini and Streamlit — Google Cloud Skill Badge" class="cert-item-img" loading="lazy">
+                            <div class="cert-item-info">
+                                <h4>Develop GenAI Apps with Gemini and Streamlit</h4>
+                                <p>Machine Learning &amp; AI &bull; Google Cloud &bull; Skill Badge · Intermediate</p>
+                                <span class="cert-cred-link">GOOGLE CLOUD</span>
+                            </div>
+                        </div>
+
+                        <!-- 16. Google Cloud — Prompt Design in Vertex AI -->
+                        <div class="cert-item cert-item-highlight" role="listitem" id="cert-prompt-vertex">
+                            <img src="assets/project2.jpeg" alt="Prompt Design in Vertex AI — Google Cloud Skill Badge" class="cert-item-img" loading="lazy">
+                            <div class="cert-item-info">
+                                <h4>Prompt Design in Vertex AI</h4>
+                                <p>Machine Learning &amp; AI &bull; Google Cloud &bull; Skill Badge · Introductory</p>
+                                <span class="cert-cred-link">GOOGLE CLOUD</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================= CONTACT ======================= -->
+        <section id="contact" class="contact section-pad" aria-label="Contact Abhinav">
+            <div class="container">
+                <div class="section-label">CONTACT</div>
+                <h2 class="section-heading reveal">LET'S <span class="accent">CONNECT</span></h2>
+
+                <div class="contact-grid">
+                    <!-- Contact Info -->
+                    <div class="contact-col">
+                        <h2 class="section-heading no-mb" style="font-size: clamp(1.8rem, 3vw, 3rem); margin-bottom: 1rem;">CONTACT</h2>
+                        <div class="contact-detail">
+                            <span class="contact-detail-label">Email</span>
+                            <a href="mailto:abhinavtrivedi2712@gmail.com" class="contact-detail-val" id="contactEmail">abhinavtrivedi2712@gmail.com</a>
+                        </div>
+                        <div class="contact-detail">
+                            <span class="contact-detail-label">Phone</span>
+                            <a href="tel:+917999065417" class="contact-detail-val" id="contactPhone">+91 7999065417</a>
+                        </div>
+                        <div class="contact-detail">
+                            <span class="contact-detail-label">Location</span>
+                            <span class="contact-detail-val">Bhopal, India</span>
+                        </div>
+                    </div>
+
+                    <!-- Social Links -->
+                    <div class="contact-col">
+                        <span class="contact-detail-label">Social</span>
+                        <a href="https://github.com/AbhiTrivedi2712" target="_blank" rel="noopener noreferrer" class="social-big-link" id="contactGithub">Github ↗</a>
+                        <a href="https://linkedin.com/in/abhinav-trivedi-0635b71b9" target="_blank" rel="noopener noreferrer" class="social-big-link" id="contactLinkedin">LinkedIn ↗</a>
+                    </div>
+
+                    <!-- Quick Message Form -->
+                    <div class="contact-col">
+                        <span class="contact-detail-label">Quick Message</span>
+                        <form id="contactForm" class="quick-form" novalidate>
+                            <input type="text"  id="contactName"    name="name"    placeholder="Your name"    required autocomplete="name">
+                            <input type="email" id="contactEmailInput" name="email"   placeholder="Your email"   required autocomplete="email">
+                            <textarea id="contactMessage" name="message" placeholder="Your message" rows="3" required></textarea>
+                            <button type="submit" id="contactSubmitBtn">Send →</button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Footer bar -->
+                <div class="contact-footer-bar">
+                    <span>Designed &amp; Developed by <strong>Abhinav Trivedi</strong></span>
+                    <span>&copy; 2026. All rights reserved.</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
