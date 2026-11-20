@@ -695,6 +695,88 @@ button { font-family: var(--font-sans); cursor: pointer; }
 @media (max-width: 1024px) { .about-grid { grid-template-columns: 1fr; gap: 4rem; } }
 
 /* ================================================================
+   10B. EDUCATION — Cyber Neural Cards
+   ================================================================ */
+.education-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+.edu-card {
+  background: rgba(9, 9, 26, 0.7);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--border-v);
+  border-radius: 2px;
+  padding: 2.2rem 1.8rem;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.4s var(--ease-out-expo), border-color 0.4s, box-shadow 0.4s;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+.edu-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; height: 2px;
+  background: linear-gradient(90deg, var(--accent), var(--accent-v), var(--accent-bright));
+  opacity: 0;
+  transition: opacity 0.35s;
+}
+.edu-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--border-accent);
+  box-shadow: 0 16px 50px rgba(192, 132, 252, 0.12), var(--neon-subtle);
+}
+.edu-card:hover::before {
+  opacity: 1;
+}
+.edu-tag {
+  font-size: 0.65rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--accent);
+  font-weight: 700;
+  font-family: var(--font-mono);
+}
+.edu-title {
+  font-size: 1.25rem;
+  font-weight: 800;
+  letter-spacing: -0.4px;
+  line-height: 1.25;
+  color: var(--text);
+}
+.edu-school {
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+  line-height: 1.5;
+}
+.edu-meta {
+  font-size: 0.8rem;
+  color: var(--text-tertiary);
+  font-family: var(--font-mono);
+  margin-top: auto;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+.edu-meta-highlight {
+  color: var(--accent-bright);
+  font-weight: 600;
+}
+@media (max-width: 900px) {
+  .education-cards {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+}
+
+/* ================================================================
    11. ACHIEVEMENTS — Cyber Glass Cards
    ================================================================ */
 .achievement-card {
@@ -819,6 +901,31 @@ button { font-family: var(--font-sans); cursor: pointer; }
 
 .proj-tagline { font-size: 0.78rem; color: var(--text-secondary); letter-spacing: 0.3px; margin-top: 0.3rem; }
 
+.proj-bullets {
+  list-style: none;
+  padding: 0;
+  margin: 0.8rem 0 1.2rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.proj-bullet {
+  font-size: 0.84rem;
+  color: var(--text-secondary);
+  line-height: 1.65;
+  position: relative;
+  padding-left: 1.25rem;
+}
+.proj-bullet::before {
+  content: '▹';
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--accent);
+  font-size: 0.85rem;
+  line-height: 1.65;
+}
+
 .proj-tech-block { display: flex; flex-direction: column; gap: 0.6rem; }
 .proj-tech-label { display: block; font-size: 0.6rem; letter-spacing: 2.5px; text-transform: uppercase; color: var(--text-tertiary); font-weight: 700; font-family: var(--font-mono); }
 .proj-pills { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.2rem; }
@@ -876,6 +983,80 @@ button { font-family: var(--font-sans); cursor: pointer; }
   border-color: rgba(0,212,255,0.45) !important;
 }
 .tech-bubble .bubble-name { text-align: center; white-space: nowrap; font-weight: 700; color: rgba(232,244,248,0.9) !important; }
+
+/* ================================================================
+   13B. SKILL CATEGORIES GRID — Categorized Competencies
+   ================================================================ */
+.skill-categories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.25rem;
+  margin-top: 2.5rem;
+}
+.skill-cat-card {
+  background: rgba(9, 9, 26, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--border-v);
+  border-radius: 2px;
+  padding: 1.5rem;
+  position: relative;
+  overflow: hidden;
+  transition: border-color 0.35s, transform 0.35s var(--ease-out-expo), box-shadow 0.35s;
+}
+.skill-cat-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; width: 2px; height: 100%;
+  background: linear-gradient(to bottom, var(--accent), var(--accent-v));
+  opacity: 0.4;
+  transition: opacity 0.3s;
+}
+.skill-cat-card:hover {
+  border-color: var(--border-accent);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 35px rgba(192, 132, 252, 0.08);
+}
+.skill-cat-card:hover::before {
+  opacity: 1;
+}
+.skill-cat-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+.skill-cat-icon {
+  font-size: 0.95rem;
+  color: var(--accent);
+}
+.skill-cat-title {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  color: var(--accent-bright);
+  font-family: var(--font-mono);
+}
+.skill-cat-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+.skill-cat-pill {
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: var(--text);
+  background: rgba(255, 255, 255, 0.035);
+  border: 1px solid var(--border);
+  padding: 0.3rem 0.65rem;
+  border-radius: 2px;
+  transition: all 0.25s;
+}
+.skill-cat-card:hover .skill-cat-pill {
+  border-color: rgba(192, 132, 252, 0.25);
+  background: rgba(192, 132, 252, 0.06);
+}
 
 /* ================================================================
    14. CERTIFICATIONS GALLERY

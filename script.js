@@ -323,7 +323,7 @@ function initSmoothScroll() {
    10. HERO ROLE TYPER
    ================================================================ */
 function initRoleTyper() {
-  const roles  = ['SOFTWARE DEV', 'CS STUDENT', 'AI ENGINEER', 'CYBER DEFENDER'];
+  const roles  = ['SOFTWARE DEV', 'AGENTIC AI DEV', 'CYBER DEFENDER', 'SALESFORCE DEV', 'CS STUDENT'];
   let idx = 0;
   const el = $('#heroRole');
   if (!el) return;
@@ -487,20 +487,22 @@ function initPhysicsBubbles() {
   const arena = $('#bubblesArena');
   if (!arena) return;
   const TECH = [
-    { name: 'Python',     icon: 'fab fa-python',       fg: '#c8e4fc', r: 48 },
-    { name: 'Java',       icon: 'fab fa-java',          fg: '#f4a76d', r: 42 },
-    { name: 'JavaScript', icon: 'fab fa-js',            fg: '#f7df90', r: 46 },
-    { name: 'HTML5',      icon: 'fab fa-html5',         fg: '#f09080', r: 38 },
-    { name: 'CSS3',       icon: 'fab fa-css3-alt',      fg: '#90c4f5', r: 36 },
-    { name: 'FastAPI',    icon: 'fas fa-bolt',          fg: '#7de8d8', r: 38 },
-    { name: 'MySQL',      icon: 'fas fa-database',      fg: '#90c4f4', r: 40 },
-    { name: 'Git',        icon: 'fab fa-git-alt',       fg: '#f08a70', r: 38 },
-    { name: 'GitHub',     icon: 'fab fa-github',        fg: '#d8d8e4', r: 40 },
-    { name: 'Linux',      icon: 'fab fa-linux',         fg: '#f0c870', r: 38 },
-    { name: 'Gen AI',     icon: 'fas fa-brain',         fg: '#00d4ff', r: 44 },
-    { name: 'Security',   icon: 'fas fa-shield-alt',    fg: '#86efac', r: 38 },
-    { name: 'Networks',   icon: 'fas fa-network-wired', fg: '#7dd3fc', r: 40 },
-    { name: 'ML',         icon: 'fas fa-robot',         fg: '#a855f7', r: 42 },
+    { name: 'Python',       icon: 'fab fa-python',          fg: '#c8e4fc', r: 46 },
+    { name: 'Java',         icon: 'fab fa-java',            fg: '#f4a76d', r: 42 },
+    { name: 'JavaScript',   icon: 'fab fa-js',              fg: '#f7df90', r: 44 },
+    { name: 'Apex Triggers',icon: 'fas fa-bolt',            fg: '#38bdf8', r: 40 },
+    { name: 'FastAPI',      icon: 'fas fa-bolt',            fg: '#7de8d8', r: 40 },
+    { name: 'REST APIs',    icon: 'fas fa-network-wired',   fg: '#90c4f5', r: 38 },
+    { name: 'Salesforce',   icon: 'fab fa-salesforce',      fg: '#00a1e0', r: 44 },
+    { name: 'SOQL',         icon: 'fas fa-database',        fg: '#7dd3fc', r: 36 },
+    { name: 'MySQL',        icon: 'fas fa-database',        fg: '#90c4f4', r: 40 },
+    { name: 'HTML & CSS',   icon: 'fab fa-html5',           fg: '#f09080', r: 38 },
+    { name: 'Agentic AI',   icon: 'fas fa-brain',           fg: '#c084fc', r: 46 },
+    { name: 'LLMs & RAG',   icon: 'fas fa-robot',           fg: '#a855f7', r: 42 },
+    { name: 'Cybersecurity',icon: 'fas fa-shield-alt',      fg: '#86efac', r: 42 },
+    { name: 'Networks',     icon: 'fas fa-project-diagram', fg: '#38bdf8', r: 38 },
+    { name: 'Git & GitHub', icon: 'fab fa-github',          fg: '#d8d8e4', r: 40 },
+    { name: 'VS Code',      icon: 'fas fa-code',            fg: '#60a5fa', r: 36 },
   ];
   let W = arena.clientWidth, H = arena.clientHeight;
   let mouseX = W / 2, mouseY = H / 2, mouseInArena = false;
